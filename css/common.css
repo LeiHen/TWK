@@ -4,4 +4,164 @@
 body{
 	font-family:Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimSun,"宋体",sans-serif;
 	font-size:62.5%;
+	color: #fff;
 }
+
+a:link,a:visited,a:hover,a:active{
+	color: #fff;
+	text-decoration: none;
+}
+
+a:link,a:visited,a:active{
+	
+}
+
+
+
+
+
+
+
+/* 模块 */
+.w{
+	width: 1180px;
+	margin: 0 auto;
+}
+.wrap_mian{
+	/*width: 1200px;*/
+	min-width: 1180px;
+	max-width: 1400px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+
+
+
+
+/* 头部 */
+.header{
+	padding: 60px 0 0 0;  
+	
+}
+
+
+.head_bg{
+	background: #1f2227;
+	width: 100%;
+	height: 60px;
+	top: 0;
+	position: fixed;
+}
+
+
+/* logo */
+.logo_a{
+	display: block;
+	float: left;
+}
+.logo_a .logo{
+	display: block;
+	float: left;
+}
+.logo_a .name{
+	display: block;
+	float: left;
+	font-size: 2em;
+	line-height: 4em;
+}
+
+/* 导航 */
+.nav_mian{
+	float: right;
+}
+.nav_mian .link{
+	display: inline-block;
+	width: 90px;
+	line-height: 60px;
+	font-size: 1.6em;
+	text-align: center;
+	position: relative;
+}
+.nav_mian .link .nav_bg{
+	background: #e60013;
+	display: block;
+	position: absolute;
+	height: 0;
+	width: 100%;
+	z-index: -1;
+}
+.nav_mian .link:hover,
+.nav_mian .hover{
+
+}
+.nav_mian .link:hover .nav_bg,
+.nav_mian .hover:hover .nav_nav{
+	height: 100%;
+}
+
+/*.nav_mian .hover{
+
+}
+.nav_mian .hover .nav_bg{
+	background: #101114;
+	height: 100%;
+}*/
+
+
+
+/* css3 动画 */
+.nav_mian .link .nav_bg{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
+
+
+
+
+
+
+
+/*
+
+	全局
+	
+	  	  主色 
+	 	  辅色 1f2227
+    	背景色
+    	点睛色 e60013
+
+	  字体颜色 
+
+	主标题颜色 
+	副标题颜色 
+	  正文颜色 
+	
+	  过渡颜色
+
+	主标题大小 30px
+	副标题大小 18px
+	  正文大小 14px
+
+	主标题行高 30px
+	副标题行高 18px
+	  正文行高 14px
+
+	  	  蓝色 1f2227
+	  	  深蓝 101114
+
+
+		  红色 
+		  浅红 
+		  深色 
+
+	      浅灰 
+		  深灰 
+
+		  边距
+		内填充
+
+*/

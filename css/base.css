@@ -41,7 +41,9 @@ a:hover{text-decoration:none;cursor:pointer}
 .fr{float:right}
 .pr{position:relative}
 .pa{position:absolute}
+.pf{position:fixed}
 .zoom{zoom:1}
+.ofh{overflow: hidden}
 .hidden{visibility:hidden}
 .none{display:none}
 
