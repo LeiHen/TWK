@@ -19,13 +19,21 @@ a:link,a:visited,a:active{
 
 
 
-
+/* 公用 */
 
 
 /* 模块 */
 .w{
 	width: 1180px;
+	padding: 0 10px;
 	margin: 0 auto;
+}
+.w_min{
+	min-width: 1180px;
+	padding: 0 10px;
+}
+.w_min_cp{
+	min-width: 1200px;
 }
 .wrap_mian{
 	/*width: 1200px;*/
@@ -37,14 +45,10 @@ a:link,a:visited,a:active{
 
 
 
-
-
 /* 头部 */
 .header{
-	padding: 60px 0 0 0;  
-	
+	padding: 60px 0 0 0;
 }
-
 
 .head_bg{
 	background: #1f2227;
@@ -52,6 +56,7 @@ a:link,a:visited,a:active{
 	height: 60px;
 	top: 0;
 	position: fixed;
+	z-index: 2;
 }
 
 
@@ -69,6 +74,13 @@ a:link,a:visited,a:active{
 	float: left;
 	font-size: 2em;
 	line-height: 4em;
+}
+.logo_a:hover .logo{
+	-webkit-transform: scale(0.94);
+	-moz-transform: scale(0.94);
+	-ms-transform: scale(0.94);
+	-o-transform: scale(0.94);
+	transform: scale(0.94);
 }
 
 /* 导航 */
@@ -96,9 +108,10 @@ a:link,a:visited,a:active{
 
 }
 .nav_mian .link:hover .nav_bg,
-.nav_mian .hover:hover .nav_nav{
+.nav_mian .hover .nav_bg{
 	height: 100%;
 }
+
 
 /*.nav_mian .hover{
 
@@ -109,9 +122,141 @@ a:link,a:visited,a:active{
 }*/
 
 
+/* 页脚 */
+.footer{
+
+}
+
+/* 页脚 站点地图 */
+.site_map{
+	/*background: #*/
+}
+.site_map .wrap_mian{
+	text-align: center;
+	vertical-align: top;
+}
+.site_map .wrap_mian .link{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	position: relative;
+	color: #1f2227;
+	font-size: 1.4em;
+	line-height: 1em;
+	padding: 10px 0;
+	margin: 20px;
+	overflow: hidden;
+}
+.site_map .wrap_mian .link .wire{
+	position: absolute;
+	background: #e60013;
+	height: 0px;
+	width: 100%;
+	bottom: -2px;
+	/*left: 0;*/
+}
+
+.site_map .wrap_mian .link:hover{
+	padding: 6px 0 14px 0;
+}
+.site_map .wrap_mian .link:hover .wire{
+	height: 2px;
+	bottom: 0px;
+}
+
+
+/* 页脚 版权 */
+.copy{
+	background: #e5e5e5;
+	color: #4b4e52;
+	font-size: 1.4em;
+	line-height: 1.6em;
+	padding:20px 0; 
+}
+.copy .info{
+	float: left;
+}
+.copy .info .copy_txt{
+	padding:10px 0 0 0;
+}
+
+
+.copy .logo_wrap{
+	float: right;
+}
+
+.copy .logo_footer{
+	position: relative;
+	bottom: 0;
+}
+
+
+/* 侧边栏 */
+.sidebar{
+
+}
+
+
+
+
+
+
+/* 模块化 */
+.mod_list_center_index{
+	position: relative;
+	overflow: hidden;
+}
+.mod_list_center_index .img{
+	/*position: relative;*/
+	display: block;
+}
+.mod_list_center_index .bg{
+	background: rgba(0,0,0,.8);
+	position: absolute;
+}
+.mod_list_center_index .bg .title{
+	
+}
+.mod_list_center_index .bg .ico{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* css3 动画 */
-.nav_mian .link .nav_bg{
+.logo_a .logo,
+.nav_mian .link .nav_bg,
+.site_map .wrap_mian .link,
+.site_map .wrap_mian .link .wire{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
@@ -151,6 +296,7 @@ a:link,a:visited,a:active{
 	  正文行高 14px
 
 	  	  蓝色 1f2227
+	  	  浅蓝 4b4e52
 	  	  深蓝 101114
 
 
@@ -158,7 +304,7 @@ a:link,a:visited,a:active{
 		  浅红 
 		  深色 
 
-	      浅灰 
+	      浅灰 e5e5e5
 		  深灰 
 
 		  边距

@@ -1,6 +1,189 @@
 @charset "utf-8";
 
+/* 首页banner */
 .banner_index{
 	height: 700px;
 	width: 100%;
+	background: url(../images/bg_banner_texture.png);
 }
+
+/* 首页 功能列表 */
+.function_index{
+	background: #1f2227;
+	padding: 0;
+	overflow: hidden;
+}
+.function_index .list{
+	float: left;
+	width: 16.6%;
+	padding:10px 0 20px 0; 
+	text-align: center;
+	color: #4b4e52;
+}
+.function_index .list .ico,
+.function_index .list .title,
+.function_index .list .title_en{
+	line-height: 1.6em;
+}
+
+.function_index .list .ico{
+	font-size: 4em;
+	display: block;
+}
+.function_index .list .title{
+	font-size: 1.6em;
+}
+.function_index .list .title_en{
+	font-size: 1.4em;
+	line-height: 1.2em;
+	text-transform: capitalize;
+}
+
+.function_index .list:hover{
+	background: #101114;
+	color: #fff;
+}
+.function_index .list:hover .ico{
+	text-shadow:#000 4px 4px 0;
+	-webkit-transition:text-shadow 0s ease-out;
+	-moz-transition:text-shadow 0s ease-out;
+	-ms-transition:text-shadow 0s ease-out;
+	-o-transition:text-shadow 0s ease-out;
+	transition:text-shadow 0s ease-out;
+}
+
+
+
+
+/* 内容 index */
+.center_index{
+	margin: 60px 0 0 0;
+}
+.center_index .wrap_mian{
+	/*margin: 60px 0 0 0;*/
+	padding: 0;
+}
+.center_index .nav_tab{
+	text-align: center;
+	margin: 20px auto;
+}
+.center_index .nav_tab .list{
+	display: inline-block;
+	position: relative;
+	height: 50px;
+	margin: 0 50px;
+	cursor: pointer;
+}
+.center_index .nav_tab .list .ico{
+	background: #1f2227;
+	/*color: #4b4e52;*/
+	color: #fff;
+	font-size: 3em;
+	line-height: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	/*display: lock;*/
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	/*right: auto;*/
+	/*vertical-align: middle;*/
+}
+.center_index .nav_tab .list .title{
+	display: block;
+	font-size: 1.6em;
+	line-height: 50px;
+	/*height: 50px;*/
+	color: #4b4e52;
+	padding: 0 4px 0 54px;
+	/*margin: 0 0 0 54px;*/
+}
+.center_index .nav_tab .list:hover{
+
+}
+.center_index .nav_tab .list:hover .ico{
+	left: 80px;
+	background: #101114;
+	/*right: 0px;*/
+}
+.center_index .nav_tab .list:hover .title{
+	padding: 0px 54px 0 4px;
+	/*font-weight: bold;*/
+}
+
+
+.center_index .tab_center{
+	
+}
+.center_index .tab_center .list{
+	
+}
+.center_index .tab_center .list .mod_list_center_index{
+	/* width:380px */
+	width: 32.2033%;
+	height: 180px;
+
+}
+
+
+
+
+
+/*  */
+
+
+
+/* css3 动画 */
+.function_index .list,
+.center_index .nav_tab .list .title,
+.center_index .nav_tab .list .ico{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}
+
+
+/*
+
+	全局
+	
+	  	  主色 
+	 	  辅色 1f2227
+    	背景色
+    	点睛色 e60013
+
+	  字体颜色 
+
+	主标题颜色 
+	副标题颜色 
+	  正文颜色 
+	
+	  过渡颜色
+
+	主标题大小 30px
+	副标题大小 18px
+	  正文大小 14px
+
+	主标题行高 30px
+	副标题行高 18px
+	  正文行高 14px
+
+	  	  蓝色 1f2227
+	  	  浅蓝 4b4e52
+	  	  深蓝 101114
+
+
+		  红色 
+		  浅红 
+		  深色 
+
+	      浅灰 e5e5e5
+		  深灰 
+
+		  边距
+		内填充
+
+*/
