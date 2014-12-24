@@ -4,7 +4,7 @@
 body{
 	font-family:Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",SimSun,"宋体",sans-serif;
 	font-size:62.5%;
-	color: #fff;
+	color: #1f2227;
 }
 
 a:link,a:visited,a:hover,a:active{
@@ -74,6 +74,7 @@ a:link,a:visited,a:active{
 	float: left;
 	font-size: 2em;
 	line-height: 4em;
+	color: #fff;
 }
 .logo_a:hover .logo{
 	-webkit-transform: scale(0.94);
@@ -203,45 +204,296 @@ a:link,a:visited,a:active{
 
 /* 模块化 */
 .mod_list_center_index{
+	display: block;
 	position: relative;
 	overflow: hidden;
+	height: 180px;
+	margin: 0 0 20px 0px;
+	cursor: pointer;
 }
 .mod_list_center_index .img{
 	/*position: relative;*/
+	position: absolute;
 	display: block;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom:0;
+	margin: auto;
 }
 .mod_list_center_index .bg{
 	background: rgba(0,0,0,.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#CC000000', endColorstr='#CC000000');
 	position: absolute;
+	width: 100%;
+	height: 68px;
+	/*top: 100%;*/
+	bottom: -68px;
+	/*bottom: 0;*/
+	color: #fff;
 }
+:root .mod_list_center_index .bg{
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#00000000', endColorstr='#00000000');
+}
+
 .mod_list_center_index .bg .title{
-	
+	font-size: 1.6em;
+	line-height: 68px;
+	padding:0 20px;
+
+	/*vertical-align: middle;*/
 }
 .mod_list_center_index .bg .ico{
+	padding: 0 10px;
+	font-size: 2em;
+	line-height: 68px;
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 68px;
+}
+
+.mod_list_center_index:hover{
+
+}
+
+.mod_list_center_index:hover .img{
+	-webkit-transform: scale(1.04);
+	-moz-transform: scale(1.04);
+	-ms-transform: scale(1.04);
+	-o-transform: scale(1.04);
+	transform: scale(1.04);
+}
+.mod_list_center_index:hover .bg{
+	bottom: 0;
+}
+.mod_list_center_index:hover .bg .ico{
+	top: 0;
+	-webkit-transition-delay:0.2s;
+	-moz-transition-delay:0.2s;
+	-ms-transition-delay:0.2s;
+	-o-transition-delay:0.2s;
+	transition-delay:0.2s;
+}
+
+.ext_list_center_index_hx2{
+	height: 380px;
+}
+
+
+
+/* 疑难解答 */
+.mod_FAQ_wrap{
+	margin: 0 0 40px 0;
+}
+/* 疑难解答 标题*/
+.mod_FAQ_wrap .FAQ_wrap_title{
+	font-size: 2.4em;
+	line-height: 1em;
+	margin: 0 0 20px 0;
+	color: #1f2227;
+	position: relative;
+}
+/* 疑难解答 更多  */
+.mod_FAQ_wrap .FAQ_wrap_title .btn_more{
+	display: block;
+	position: absolute;
+	right: 0;
+	/*top: 0;*/
+	bottom: 0;
+	line-height: 1em;
+	padding: 0 10px;
+	color: #4b4e52;
+	font-size: 0.5em;
+}
+.mod_FAQ_wrap .FAQ_wrap_title .btn_more .ico{
+	display: inline-block;
+}
+
+.mod_FAQ_wrap .FAQ_wrap_title .btn_more:hover{
+	color: #e60013;
+}
+.mod_FAQ_wrap .FAQ_wrap_title .btn_more:active{
 	
+}
+.mod_FAQ_wrap .FAQ_wrap_title .btn_more:active .ico{
+	-webkit-transform:translate(2px,0);
+	-moz-transform:translate(2px,0);
+	-ms-transform:translate(2px,0);
+	-o-transform:translate(2px,0);
+	transform:translate(2px,0);
+}
+
+.mod_FAQ{
+	border: 1px solid #e5e5e5;
+	position: relative;
+	padding: 20px 20px 20px 50px; 
+	margin: 0 0 20px 0; 
+	color: #1f2227;
+}
+.mod_FAQ .ico{
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	/*font-size: 0.875em;*/
+	font-size: 1em;
+	font-weight: normal;
+
+	height: 20px;
+	width: 20px;
+	display: block;
+	position: absolute;
+	
+	overflow: hidden;
+	left: 20px;
+	
+}
+.mod_FAQ .Q_title{
+	margin: 0 0 10px 0;
+	line-height: 20px;
+	/*font-size: 1.6em;*/
+	font-size: 1.4em;
+	/*font-weight: bold;*/
+	font-weight: bold;
+}
+.mod_FAQ .Q_title .ico{
+	background: #e60013;
+	/*font-size: 1.4em;*/
+}
+.mod_FAQ .A_txt{
+	font-size: 1.4em;
+}
+.mod_FAQ .A_txt .ico{
+	background: #4b4e52;
+}
+
+.mod_FAQ:hover{
+	border: 1px solid #e60013;
 }
 
 
 
 
+/* 留言 */
+.mod_message{
+
+}
+.mod_message .percent{
+	border: 1px solid #e5e5e5;
+	padding:10px;
+	margin: 10px 0;
+	/*color: #e5e5e5;*/
+}
+.mod_message .title{
+
+}
+.mod_message .input_txt{
+	font-size: 1.4em;
+	line-height: 1.6em;
+	border: none;
+	
+	width: 100%;
+
+	/*background: red;*/
+	outline: none;
+	display:block;
+	color: #4b4e52;
+}
 
 
+.mod_messag .name{
+	
+}
+.mod_message .phone{
+	
+}
+.mod_message .email{
+	
+}
+.mod_message .txt{
+	resize:none;
+	height: 80px;
+}
+.mod_message .btn{
+	
+}
 
 
+.mod_message .percent:hover{
+	border-color:#e60013;
+}
+.mod_message .percent:hover .input_txt:focus{
+	color: #101114;
+}
 
 
+/* 按钮 */
+.mod_btn{
+	/*padding: 10px 20px;*/
+	background: #4b4e52;
+	display: inline-block;
+	font-size: 1.4em;
+	/*color: #fff;*/
+	/*background: #4b4e52;*/
+	/*border: 1px solid #e5e5e5;*/
+	border: 1px solid #e5e5e5;
+	cursor: pointer;
+	position: relative;
+}
+.mod_btn input,
+.mod_btn button{
+	border: none;
+	background-color: #1f2227;
+	color:#fff;
+	padding: 10px 40px 10px 20px;
+	outline: none;
+	outline: 1px solid #1f2227;
+	cursor: pointer;
+	width: 100%;
+	font-size: 1em;
+}
+.mod_btn .ico{
+	position: absolute;
+}
+
+.mod_btn:hover,
+.mod_btn:hover input,
+.mod_btn:hover button{
+	background-color: #4b4e52;
+	color: #fff;
+
+}
+.mod_btn:hover input,
+.mod_btn:hover button{
+	outline: 1px solid #4b4e52;
+}
+
+.mod_btn:active,
+.mod_btn:active input,
+.mod_btn:active button{
+	background-color: #101114;
+	color: #fff;
+}
 
 
+.mod_btn input:disabled,
+.mod_btn button:disabled{
+	background-color:#f5f5f5;
+	color:#ACA899;
+	cursor: default;
+}
+.mod_btn input[disabled],
+.mod_btn button[disabled]{
+	background-color:#f5f5f5;
+	color:#ACA899;
+	cursor: default;
+}
 
-
-
-
-
-
-
-
-
-
+/*.ext_btn_disabled{
+	background: #f5f5f5;
+	color: #1f2227;
+}*/
 
 
 
@@ -256,7 +508,20 @@ a:link,a:visited,a:active{
 .logo_a .logo,
 .nav_mian .link .nav_bg,
 .site_map .wrap_mian .link,
-.site_map .wrap_mian .link .wire{
+.site_map .wrap_mian .link .wire,
+.mod_list_center_index,
+.mod_list_center_index .img,
+.mod_list_center_index .bg,
+.mod_list_center_index .bg .ico,
+.mod_FAQ_wrap .FAQ_wrap_title .btn_more,
+.mod_FAQ_wrap .FAQ_wrap_title .btn_more .ico,
+.mod_FAQ,
+.mod_message .percent,
+.mod_message .percent .input_txt,
+.mod_btn,
+.mod_btn,
+.mod_btn input,
+.mod_btn button{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
@@ -287,8 +552,8 @@ a:link,a:visited,a:active{
 	
 	  过渡颜色
 
-	主标题大小 30px
-	副标题大小 18px
+	主标题大小 24px
+	副标题大小 16px
 	  正文大小 14px
 
 	主标题行高 30px
