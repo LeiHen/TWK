@@ -177,6 +177,79 @@
 	/*padding:0 0 40px 0; */
 }
 
+.about_nav{
+	overflow: hidden;
+	border-bottom:2px solid #e5e5e5; 
+}
+.about_nav .list{
+	text-align: center;
+	width: 25%;
+	/*height: 160px;*/
+	padding:30px 0; 
+	float: left;
+	
+}
+.about_nav .list .ico{
+	font-size: 8em;
+}
+.about_nav .list .title{
+	font-size: 1.6em;
+	line-height: 2em;
+	/*margin: 10px 0;*/
+}
+
+.about_nav .list:hover{
+	background: #eaeceb;
+}
+.about_nav .list:hover .ico{
+	color: #e60013;
+}
+
+
+/*  */
+.about_content{
+	margin: 20px auto;
+	overflow: hidden;
+}
+.about_content .list{
+	position: relative;
+	padding: 20px 20px 20px 400px;
+	overflow: hidden;
+
+}
+.about_content .list .ico_warp{
+	left: 0;
+	/*left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;*/
+	position: absolute;
+	width: 400px;
+	text-align: center;
+	/*vertical-align: middle;*/
+	display: table;
+	height: 300px;
+	/*height: 100%;*/
+}
+.about_content .list .ico_warp .ico{
+	font-size: 10em;
+	/*height: 120px;*/
+	/*line-height: 1.2em;*/
+	/*display: block;*/
+	display: table-cell;
+	position: relative;
+	vertical-align: middle;
+}
+.about_content .list .title{
+	font-size: 2.4em;
+	color: #e60013;
+	margin: 0 0 20px 0;
+}
+.about_content .list .txt{
+	font-size: 1.4em;
+	line-height: 1.8em;
+}
+
 
 
 
@@ -222,7 +295,9 @@
 	line-height: 1.8em;
 	padding: 0 20px 0 0;
 }
-
+.booty .booty_content .title_wrap .info p{
+	margin: 10px 0;
+}
 
 /* 万密宝 功能内容 */
 .booty .booty_content .function{
@@ -285,10 +360,8 @@
 	border-spacing:4px;
 }
 .booty .booty_content .attr thead{
-	
 	background: #1f2227;
 	/*width: 100%;*/
-
 }
 .booty .booty_content .attr thead .title{
 	border-radius:10px 10px 0px 0px;
@@ -302,21 +375,14 @@
 
 }
 .booty .booty_content .attr tbody tr{
-	/*margin: 20px 0;*/
-	/*padding:20px 0;*/
-	overflow: hidden;
-	height: auto;
-	/*background: red;*/
 	background: #e5e5e5;
-
 }
-.booty .booty_content .attr tbody tr:nth-child(2n){
+/*.booty .booty_content .attr tbody tr:nth-child(2n){
 	background: #e5e5e5;
-	/*background: #fff;*/
-}
+}*/
 .booty .booty_content .attr tbody tr td{
 	/*margin: 20px 0;*/
-	padding:40px 0;
+	padding:20px 0;
 
 	/*background: #e5e5e5;*/
 	/*border: 2px;*/
@@ -348,19 +414,39 @@
 }
 
 .booty .booty_content .attr tbody .info_td{
-	/*overflow: hidden;*/
+	padding:20px 20px;
+	font-size: 1.4em;
+	/*vertical-align: top;*/
 }
 .booty .booty_content .attr tbody .info_td ul{
 
 }
 .booty .booty_content .attr tbody .info_td ul li{
-	font-size: 1.4em;
+	
 	line-height: 2em;
 	/*list-style: inside ;*/
 	list-style-type: decimal;
-	list-style-position: inside;
-	margin-left: 1em;
+	/*list-style-position: inside;*/
+	/*padding-left: 10em;*/
+	margin-left: 2em;
 }
+.booty .booty_content .attr tbody tr:hover{
+	/*background: #1f2227;*/
+	/*background: #fff;*/
+}
+.booty .booty_content .attr tbody tr:hover .ico_td .ico{
+	background: #e60013;
+	/*background: #fff;*/
+	color: #fff;
+	/*color: #1f2227;*/
+}
+.booty .booty_content .attr tbody tr:hover .ico_td .sub_title{
+	/*color: #fff;*/
+}
+.booty .booty_content .attr tbody tr:hover .info_td{
+	/*color: #fff;*/
+}
+
 
 
 /* Share app */
@@ -464,7 +550,13 @@
 .center_index .nav_tab .list .ico,
 .share_app .list_wrap .list,
 .share_app .list_wrap .list .img,
-.booty .booty_content .function .ico_wrap .ico{
+.booty .booty_content .function .ico_wrap .ico,
+.booty .booty_content .attr tbody tr,
+.booty .booty_content .attr tbody tr .ico_td .ico,
+.booty .booty_content .attr tbody tr .ico_td .sub_title,
+.booty .booty_content .attr tbody tr .info_td,
+.about_nav .list,
+.about_nav .list .ico{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

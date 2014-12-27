@@ -582,6 +582,9 @@ a:link,a:visited,a:active{
 	background-color: #1f2227;
 	color: #fff;
 }
+.ext_btn_hover{
+	background-color: #e60013;
+}
 .ext_btn_a:hover{
 	background-color: #e60013;
 }
