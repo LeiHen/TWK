@@ -252,18 +252,30 @@
 
 
 
-
-
 /* 万密宝 */
 .booty_head{
 	background-position: right -320px;
 }
 .booty{
-
+	/*overflow: hidden;*/
 }
 .booty .booty_content{
 	margin: 40px auto;
+	position: relative;
+	/*overflow: hidden;*/
 }
+.booty .booty_content .list{
+	/*display: none;*/
+	position: relative;
+	/*position: absolute;*/
+	/*float: left;*/
+	/*z-index: 10;*/
+	/*overflow: hidden;
+	left: 0;
+	top: 0;*/
+}
+.booty .booty_content .none{display:none}
+.booty .booty_content .block{display:block}
 
 .booty .booty_content .title_wrap,
 .booty .booty_content .function{
@@ -361,7 +373,6 @@
 }
 .booty .booty_content .attr thead{
 	background: #1f2227;
-	/*width: 100%;*/
 }
 .booty .booty_content .attr thead .title{
 	border-radius:10px 10px 0px 0px;
@@ -377,13 +388,9 @@
 .booty .booty_content .attr tbody tr{
 	background: #e5e5e5;
 }
-/*.booty .booty_content .attr tbody tr:nth-child(2n){
-	background: #e5e5e5;
-}*/
 .booty .booty_content .attr tbody tr td{
 	/*margin: 20px 0;*/
 	padding:20px 0;
-
 	/*background: #e5e5e5;*/
 	/*border: 2px;*/
 }
@@ -416,37 +423,28 @@
 .booty .booty_content .attr tbody .info_td{
 	padding:20px 20px;
 	font-size: 1.4em;
-	/*vertical-align: top;*/
 }
 .booty .booty_content .attr tbody .info_td ul{
 
 }
 .booty .booty_content .attr tbody .info_td ul li{
-	
 	line-height: 2em;
-	/*list-style: inside ;*/
 	list-style-type: decimal;
-	/*list-style-position: inside;*/
-	/*padding-left: 10em;*/
 	margin-left: 2em;
 }
 .booty .booty_content .attr tbody tr:hover{
-	/*background: #1f2227;*/
-	/*background: #fff;*/
+
 }
 .booty .booty_content .attr tbody tr:hover .ico_td .ico{
 	background: #e60013;
-	/*background: #fff;*/
 	color: #fff;
-	/*color: #1f2227;*/
 }
 .booty .booty_content .attr tbody tr:hover .ico_td .sub_title{
-	/*color: #fff;*/
+
 }
 .booty .booty_content .attr tbody tr:hover .info_td{
-	/*color: #fff;*/
-}
 
+}
 
 
 /* Share app */
@@ -532,6 +530,10 @@
 .share_app .list_wrap .txtimg .link{
 	float: left;
 }
+
+
+/* 应用分享 详细 */
+
 
 
 /* 疑难解答 */

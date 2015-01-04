@@ -42,6 +42,11 @@ a:link,a:visited,a:active{
 	padding: 0 10px;
 	margin: 0 auto;
 }
+.w_article{
+	width: 780px;
+	margin: 0 auto;
+	/*padding: 0 10px;*/
+}
 
 
 
@@ -255,6 +260,13 @@ a:link,a:visited,a:active{
 	width: 61.8%;
 	float: right;
 }
+.share_message .message .btn_wrap{
+	
+}
+.share_message .message .btn_wrap .mod_btn{
+	/*width: 61.8%;*/
+	width: 100%;
+}
 
 
 
@@ -336,6 +348,73 @@ a:link,a:visited,a:active{
 .ext_list_center_index_hx2{
 	height: 380px;
 }
+
+
+/* 文章详细 */
+.mod_article_detail{
+	margin: 0 0 60px 0;
+}
+.mod_article_detail .title{
+	/*font-size: 	2.4em;
+	padding: 0 0 10px 0;*/
+
+	font-size: 3em;
+	line-height: 1.6em;
+	color: #e7000a;
+	text-align: center;
+	margin: 60px auto 20px auto;
+	/*padding: 40px 40px 0px 40px;*/
+}
+.mod_article_detail .time{
+	font-size: 1.4em;
+	line-height: 1em;
+	text-align: center;
+	padding: 0 0 20px 0;
+	display: block;
+	border-bottom:2px solid #e5e5e5;
+}
+
+.mod_article_detail .thumbnail{
+	margin: 20px 0;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+.mod_article_detail .thumbnail .img{
+	min-width: 100%;
+	max-width: 100%;
+	position:absolute;
+	top:0;
+	bottom: 0;
+	margin: auto;
+}
+
+.mod_article_detail .detail{
+	font-size: 1.4em;
+	line-height: 1.8em;
+}
+.mod_article_detail .detail p,
+.mod_article_detail .detail ul{
+	margin: 20px 0;
+}
+.mod_article_detail .detail p{
+	text-indent: 2em;
+}
+.mod_article_detail .detail img{
+	/*margin: 10px auto;*/
+	/*display: block;*/
+}
+.mod_article_detail .detail ul{
+	list-style-type: disc;
+	margin: 20px 20px;
+}
+.mod_article_detail .detail li{
+	list-style-type: disc;
+	/*margin: 20px 10px;*/
+
+}
+
+
 
 
 
@@ -435,11 +514,14 @@ a:link,a:visited,a:active{
 .mod_message{
 
 }
+.mod_message .per50{
+	width: 50%;
+	float: left;
+}
 .mod_message .percent{
 	border: 1px solid #e5e5e5;
 	padding:10px;
 	margin: 10px 0;
-	/*color: #e5e5e5;*/
 }
 .mod_message .btn_wrap{
 
@@ -456,8 +538,6 @@ a:link,a:visited,a:active{
 	border: none;
 	
 	width: 100%;
-
-	/*background: red;*/
 	outline: none;
 	display:block;
 	color: #4b4e52;
@@ -471,6 +551,9 @@ a:link,a:visited,a:active{
 	
 }
 .mod_message .email{
+	
+}
+.mod_messag .name{
 	
 }
 .mod_message .txt{
@@ -722,11 +805,9 @@ a:link,a:visited,a:active{
 	  	  浅蓝 4b4e52
 	  	  深蓝 101114
 
-
 		  红色 
 		  浅红 
 		  深色 
-
 
 		  灰色 eaeceb
 	      浅灰 e5e5e5
