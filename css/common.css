@@ -236,8 +236,91 @@ a:link,a:visited,a:active{
 
 /* 侧边栏 */
 .sidebar{
+	position:fixed;
+	right: -120px;
+	top: 50%;
+}
+.sidebar .vertical{
+	position: relative;
+	margin: -50% 0 0 0;
+}
+.sidebar .list{
+	display: block;
+	position: relative;
+	width: 170px;
+	overflow: hidden;
+	background: #1f2227;
+	left: 0;
+	/*margin: -50% 0 0 0;*/
 
 }
+.sidebar .list .icon,
+.sidebar .list .txt{
+	display: inline-block;
+	+display: inline;
+	+zoom: 1;
+	line-height: 50px;
+	color: #fff;
+}
+.sidebar .list .icon{
+	width: 50px;
+	height: 50px;
+	font-size: 3em;
+	text-align: center;
+
+}
+.sidebar .list .txt{
+	font-size: 1.4em;
+	padding: 0 10px;
+	vertical-align: top;
+}
+
+.sidebar .list:hover{
+	background: #e60013;
+	left: -120px;
+}
+
+.sidebar .list_QR{
+	overflow: visible;
+}
+.sidebar .list_QR .QR{
+	display: none;
+	/*visibility: visible;*/
+	position: absolute;
+	top: -120px;
+	z-index: -1;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition-delay:0.5s!important;
+	-moz-transition-delay:0.5s!important;
+	-ms-transition-delay:0.5s!important;
+	-o-transition-delay:0.5s!important;
+	transition-delay:0.5s!important;
+}
+.sidebar .list_QR .QR .img{
+	width: 160px;
+	height: 160px;
+	display: block;
+	border: 5px solid #1f2227;
+}
+
+.sidebar .list_QR:hover{
+	
+}
+.sidebar .list_QR:hover .QR{
+	/*visibility: hidden;*/
+	top: -170px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	/*transition-delay:-0.4s!important;*/
+}
+
+
+/*.sidebar .list:hover{
+	background: #e60013;
+}*/
+
+
 
 
 /* 分享与留言 */
@@ -761,7 +844,9 @@ a:link,a:visited,a:active{
 .mod_btn .ico,
 .mod_btn input,
 .mod_btn button,
-.mod_page .list .link{
+.mod_page .list .link,
+.sidebar .list,
+.sidebar .list_QR .QR{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

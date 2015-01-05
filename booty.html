@@ -78,9 +78,9 @@
                </div>
                <div class="content booty" id="booty">
                    <div class="nav_sub tc" id="bootyNav">
-                       <a class="mod_btn ext_btn_a ext_btn_hover">加密软件</a>
-                       <a class="mod_btn ext_btn_a">军密级硬加密卡</a>
-                       <a class="mod_btn ext_btn_a">加密移动硬盘</a>
+                       <a class="link mod_btn ext_btn_a ext_btn_hover">加密软件</a>
+                       <a class="link mod_btn ext_btn_a">军密级硬加密卡</a>
+                       <a class="link mod_btn ext_btn_a">加密移动硬盘</a>
                    </div>
                    <ul class="booty_content" id="bootyContent">
                         
@@ -372,12 +372,13 @@
                        </li>
                        <!-- 加密移动硬盘]] -->
                        
-                       
+                       <li class="clear"></li>
                        
                    </ul>
                    <div class="clear"></div>
               
                </div>
+               <div class="clear"></div>
            </div>
             
         </div>
@@ -468,26 +469,32 @@
         
         <!-- sidebar]]-->
         <div class="sidebar">
-             
+           <div class="vertical">
+                <a class="list list_QR" id="QR">
+                    <span class="icon icon_qrcode"></span>
+                    <span class="txt">网站二维码</span>
+                    <sapn class="QR"><img src="images/QR.png" alt="" class="img"></sapn>
+                </a>
+                
+                <a class="list" href="http://wpa.qq.com/msgrd?v=3&uin=1666828953&site=qq&menu=yes" target="_blank">
+                    <span class="icon icon_qq"></span>
+                    <span class="txt">1666828953</span>
+                </a>
+
+                <a class="list">
+                    <span class="icon icon_phone2"></span>
+                    <span class="txt">020-0123456</span>
+                </a>
+
+                
+                <a class="list" id="toTop">
+                    <span class="icon icon_chevron_up"></span>
+                    <span class="txt">返回顶部</span>
+                </a>
+                
+           </div>
         </div>
         <!-- sidebar]]-->
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
        
        
        
@@ -512,6 +519,9 @@
                     shortUrl:false,
                     hideMore:false
                 }
+                
+                tabBar("bootyNav","bootyContent","ext_btn_hover");
+                
 			}
 			init();
 		</script>

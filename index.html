@@ -102,13 +102,13 @@
         <!-- center_index[[-->
         <div class="center_index">
             <div class="wrap_mian">
-                <ul class="nav_tab">
-                    <li class="list"><sapn class="ico icon_book"></sapn><span class="title">应用分享</span></li>
-                    <li class="list"><sapn class="ico icon_users"></sapn><span class="title">疑难解答</span></li>
-                    <li class="list"><sapn class="ico icon_message"></sapn><span class="title">留言提交</span></li>
+                <ul class="nav_tab" id="centerIndexNav">
+                    <li class="link"><sapn class="ico icon_book"></sapn><span class="title">应用分享</span></li>
+                    <li class="link"><sapn class="ico icon_users"></sapn><span class="title">疑难解答</span></li>
+                    <li class="link"><sapn class="ico icon_message"></sapn><span class="title">留言提交</span></li>
                 </ul>
-                <ul class="tab_center">
-                    <li class="list share_app_index">
+                <ul class="tab_center" id="centerIndexContent">
+                    <li class="list share_app_index block">
                        
                        <div class="row">
                             <div class="mod_list_center_index">
@@ -219,7 +219,6 @@
                         
                     </li>
                     
-                    
                     <li class="list message_index">
                         <div class="mod_message">
 <!--                            <h1 class="title">留言</h1>-->
@@ -288,28 +287,32 @@
         
         <!-- sidebar]]-->
         <div class="sidebar">
-             
+           <div class="vertical">
+                <a class="list list_QR" id="QR">
+                    <span class="icon icon_qrcode"></span>
+                    <span class="txt">网站二维码</span>
+                    <sapn class="QR"><img src="images/QR.png" alt="" class="img"></sapn>
+                </a>
+                
+                <a class="list" href="http://wpa.qq.com/msgrd?v=3&uin=1666828953&site=qq&menu=yes" target="_blank">
+                    <span class="icon icon_qq"></span>
+                    <span class="txt">1666828953</span>
+                </a>
+
+                <a class="list">
+                    <span class="icon icon_phone2"></span>
+                    <span class="txt">020-0123456</span>
+                </a>
+
+                
+                <a class="list" id="toTop">
+                    <span class="icon icon_chevron_up"></span>
+                    <span class="txt">返回顶部</span>
+                </a>
+                
+           </div>
         </div>
         <!-- sidebar]]-->
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
        
        
        
@@ -325,7 +328,7 @@
 		<script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-
+                tabBar("centerIndexNav","centerIndexContent");
 			}
 			init();
 		</script>

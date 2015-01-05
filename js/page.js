@@ -10,7 +10,17 @@
 * @dependent:总初始化
 */
 function mianInit(){
-	
+	toTop();
+
+	//侧导航 QR
+	$("#QR").hover(function() {
+        $("#QR").children(".QR").animate({opacity: 1, top: -170+"px"}, 100)
+        $("#QR").children(".QR").css("display","block");
+        
+    }, function() {
+        $("#QR").children(".QR").animate({opacity: 0, top: -120+"px"}, 100)
+        $("#QR").children(".QR").css("display","none");
+    });
 }
 mianInit();
 /* @end **/

@@ -59,7 +59,7 @@
 
 /* 内容 index */
 .center_index{
-	margin: 60px 0 0 0;
+	margin: 60px 0 60px 0;
 }
 .center_index .wrap_mian{
 	/*margin: 60px 0 0 0;*/
@@ -70,14 +70,14 @@
 	text-align: center;
 	margin: 20px auto;
 }
-.center_index .nav_tab .list{
+.center_index .nav_tab .link{
 	display: inline-block;
 	position: relative;
 	height: 50px;
 	margin: 0 50px;
 	cursor: pointer;
 }
-.center_index .nav_tab .list .ico{
+.center_index .nav_tab .link .ico{
 	background: #1f2227;
 	/*color: #4b4e52;*/
 	color: #fff;
@@ -93,7 +93,7 @@
 	/*right: auto;*/
 	/*vertical-align: middle;*/
 }
-.center_index .nav_tab .list .title{
+.center_index .nav_tab .link .title{
 	display: block;
 	font-size: 1.6em;
 	line-height: 50px;
@@ -102,16 +102,16 @@
 	padding: 0 4px 0 54px;
 	/*margin: 0 0 0 54px;*/
 }
-.center_index .nav_tab .list:hover{
+.center_index .nav_tab .link:hover{
 
 }
-.center_index .nav_tab .list:hover .ico{
+.center_index .nav_tab .link:hover .ico{
 	left: 80px;
 	background: #101114;
 	background: #e60013;
 	/*right: 0px;*/
 }
-.center_index .nav_tab .list:hover .title{
+.center_index .nav_tab .link:hover .title{
 	padding: 0px 54px 0 4px;
 	text-decoration:underline;
 	/*font-weight: bold;*/
@@ -119,13 +119,19 @@
 
 
 .center_index .tab_center{
-	
+	overflow:hidden;
 }
 .center_index .tab_center .list{
 	overflow: hidden;
-	margin: 40px auto; 
+	margin: 40px auto;
+	display: none;
 }
-
+.center_index .tab_center .block{
+	display: block;
+}
+.center_index .tab_center .none{
+	display: none;
+}
 
 /* center_index 应用分享 */
 .center_index .tab_center .share_app_index .row{
@@ -257,25 +263,23 @@
 	background-position: right -320px;
 }
 .booty{
-	/*overflow: hidden;*/
+
 }
 .booty .booty_content{
 	margin: 40px auto;
 	position: relative;
-	/*overflow: hidden;*/
 }
 .booty .booty_content .list{
-	/*display: none;*/
-	position: relative;
-	/*position: absolute;*/
-	/*float: left;*/
-	/*z-index: 10;*/
-	/*overflow: hidden;
-	left: 0;
-	top: 0;*/
+	display: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
 }
 .booty .booty_content .none{display:none}
-.booty .booty_content .block{display:block}
+.booty .booty_content .block{
+	display:block;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
 
 .booty .booty_content .title_wrap,
 .booty .booty_content .function{
@@ -548,8 +552,8 @@
 
 /* css3 动画 */
 .function_index .list,
-.center_index .nav_tab .list .title,
-.center_index .nav_tab .list .ico,
+.center_index .nav_tab .link .title,
+.center_index .nav_tab .link .ico,
 .share_app .list_wrap .list,
 .share_app .list_wrap .list .img,
 .booty .booty_content .function .ico_wrap .ico,

@@ -31,49 +31,45 @@ function addFavorite() {
 * @type     :基类
 * @dependent:
 */
-function tabBar(){
-    var nav=$("#bootyNav");
-    var content=$("#bootyContent");
+function tabBar(navID,contentID,classH){
+    var nav=$("#"+navID);
+    var content=$("#"+contentID);
     var list=content.children(".list");
-    var a=nav.children("a");
+    var a=nav.children(".link");
 
     GLOBAL.namespace("TABBAR");
     GLOBAL.TABBAR.index=0;
+    console.log(nav);
 
 
     a.click(function(event) {
-
         var i=GLOBAL.TABBAR.index=$(this).index();
 
+        console.log(classH);
+        if(classH==undefined||classH==null){
+
+        }else{
+            a.removeClass(classH);
+            $(this).addClass(classH);
+        }
+        // a.removeClass(classH);
+        // $(this).addClass(classH);
+
+        list.stop().animate({
+            opacity: 0
+        }, 800);
+
+        list.removeClass('block').addClass('none');
+
+        $(list[i]).removeClass('none').addClass('block');
+
         $(list[i]).stop().animate({
-            left: -100+"%",
-            opacity:0
-        }, 1000)
-        $(list[i]).addClass('none');
-
-        // $(list[(i+1)]).removeClass('none');
-        // $(list[(i+1)]).addClass('block');
-        // $(list[(i+1)]).css('display', 'block');
-        // $(list[(i+1)]).stop().animate({
-            
-        //     opacity:1
-        // }, 1000)
-        // $(list[i+1])
-
-        // GLOBAL.TABBAR.index=i;
-
-
-        console.log(i);
-        console.log(list);
-        console.log(nav);
-        // i=
+            opacity: 1
+        }, 800);
     });
-
-
-
 }
 /* @end **/
-tabBar();
+
 
 
 
