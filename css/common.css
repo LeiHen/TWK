@@ -61,7 +61,7 @@ a:link,a:visited,a:active{
 	height: 60px;
 	top: 0;
 	position: fixed;
-	z-index: 2;
+	z-index: 10;
 }
 
 
@@ -261,6 +261,7 @@ a:link,a:visited,a:active{
 	+zoom: 1;
 	line-height: 50px;
 	color: #fff;
+	color: #4b4e52;
 }
 .sidebar .list .icon{
 	width: 50px;
@@ -278,6 +279,10 @@ a:link,a:visited,a:active{
 .sidebar .list:hover{
 	background: #e60013;
 	left: -120px;
+}
+.sidebar .list:hover .icon,
+.sidebar .list:hover .txt{
+	color: #fff;
 }
 
 .sidebar .list_QR{
@@ -307,6 +312,7 @@ a:link,a:visited,a:active{
 .sidebar .list_QR:hover{
 	
 }
+
 .sidebar .list_QR:hover .QR{
 	/*visibility: hidden;*/
 	top: -170px;
@@ -846,7 +852,11 @@ a:link,a:visited,a:active{
 .mod_btn button,
 .mod_page .list .link,
 .sidebar .list,
-.sidebar .list_QR .QR{
+.sidebar .list_QR .QR,
+.mod_banner .image_button .button,
+.mod_banner .image_button .hover,
+.mod_banner .link,
+.mod_banner .link .icon{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
