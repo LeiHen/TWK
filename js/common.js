@@ -39,8 +39,6 @@ function tabBar(navID,contentID,classH){
 
     GLOBAL.namespace("TABBAR");
     GLOBAL.TABBAR.index=0;
-    console.log(nav);
-
 
     a.click(function(event) {
         var i=GLOBAL.TABBAR.index=$(this).index();
@@ -52,8 +50,6 @@ function tabBar(navID,contentID,classH){
             a.removeClass(classH);
             $(this).addClass(classH);
         }
-        // a.removeClass(classH);
-        // $(this).addClass(classH);
 
         list.stop().animate({
             opacity: 0

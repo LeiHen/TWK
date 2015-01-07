@@ -24,7 +24,7 @@
             <script src="js/hack/html5shiv.js"></script>
         <![endif]-->
 <!--        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
-        
+
 
 		<link rel="stylesheet" href="css/base.css">
 		<link rel="stylesheet" href="css/common.css">
@@ -57,56 +57,74 @@
 		<!-- header ]] -->
       
         <!-- banner index [[ -->
-        <div class="w_min_cp mod_banner banner_index">
-<!--
+        <div class="w_min_cp mod_banner banner_index" id="bannerBox">
+            <!-- load[[ -->
             <div class="loading">
                 <span class="icon icon_loading"></span>
             </div>
--->
-            <div class="images_box sub_bg_01">
-                <div class="wrap">
+            <!-- load]] -->
+          
+           <div class="box none">
+          
+            <!-- 第一屏[[ -->
+            <div class="images_box sub_bg_01 none">
+<!--                <div class="wrap">-->
                     <div class="img_bg"></div>
                     <div class="chartlet">
-                        <span class="layer img_mian"><img src="images/banner/img_01_mian.png" alt=""></span>
-                        <span class="layer img_01"><img src="images/banner/img_01_01.png" alt=""></span>
-                    </div>
-                    <div class="content">
-                        <span class="layer txt_01"></span>
-                    </div>
-                    <a href="#" class="link link_animation"><span class="icon icon_arrow_right"></span></a>
-                </div>
-            </div>
-            
-            <div class="images_box sub_bg_02 none">
-                <div class="wrap">
-                    <div class="img_bg"></div>
-                    <div class="chartlet">
-                        <span class="layer img_mian"><img src="images/banner/img_02_mian.png" alt=""></span>
-                        <span class="layer img_01"><img src="images/banner/img_02_01.png" alt=""></span>
+                        <span class="layer img_main "><img src="images/banner/img_01_main.png" alt=""></span>
+                        <span class="layer img_01 "><img src="images/banner/img_01_01.png" alt=""></span>
                     </div>
                     <div class="content">
                         <span class="layer txt_01"></span>
                     </div>
                     <a href="#" class="link "><span class="icon icon_arrow_right"></span></a>
-                </div>
+<!--                </div>-->
             </div>
+            <!-- 第一屏]] -->
             
-            <div class="images_box sub_bg_03 none">
-                <div class="wrap">
+            <!-- 第二屏[[ -->
+            <div class="images_box sub_bg_02 none">
+<!--                <div class="wrap">-->
                     <div class="img_bg"></div>
                     <div class="chartlet">
-                        
+                        <span class="layer img_main "><img src="images/banner/img_02_main.png" alt=""></span>
+                        <span class="layer img_01 "><img src="images/banner/img_02_01.png" alt=""></span>
+                    </div>
+                    <div class="content">
+                        <span class="layer txt_01"></span>
+                    </div>
+                    <a href="#" class="link "><span class="icon icon_arrow_right"></span></a>
+<!--                </div>-->
+            </div>
+            <!-- 第二屏[[ -->
+            
+            <!-- 第三屏[[ -->
+            <div class="images_box sub_bg_03 none">
+<!--                <div class="wrap">-->
+                    <div class="img_bg"></div>
+                    <div class="chartlet">
+                        <span class="layer img_main"><img src="images/banner/img_03_main.png" alt=""></span>
+                        <span class="layer img_01"><img src="images/banner/img_03_01.png" alt=""></span>
+                        <span class="layer img_02"><img src="images/banner/img_03_02.png" alt=""></span>
+                        <span class="layer img_03"><img src="images/banner/img_03_03.png" alt=""></span>
+                    </div>
+                    <div class="content">
+                        <span class="layer txt_01"></span>
                     </div>
                     <a href="#" class="link"><span class="icon icon_arrow_right"></span></a>
-                </div>
+<!--                </div>-->
             </div>
+            <!-- 第三屏]] -->
             
+            <!-- 切换色块[[ -->
             <ul class="image_button">
                 <li class="button hover"></li>
                 <li class="button"></li>
                 <li class="button"></li>
             </ul>
+            <!-- 切换色块]] -->
             
+            </div>
         </div>
         <!-- banner index ]] -->
         
@@ -377,8 +395,15 @@
 			//初始化 统一入口
 			function init(){
                 tabBar("centerIndexNav","centerIndexContent");
+                
+               
+                $('body').loadBox=loadBox('bannerBox');
+
+                
+
 			}
 			init();
+
 		</script>
 		
 		<!-- css3兼容低版本 -->

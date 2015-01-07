@@ -293,7 +293,7 @@ a:link,a:visited,a:active{
 	/*visibility: visible;*/
 	position: absolute;
 	top: -120px;
-	z-index: -1;
+	z-index: 0;
 	opacity: 0;
 	filter: alpha(opacity=0);
 	-webkit-transition-delay:0.5s!important;
@@ -856,7 +856,8 @@ a:link,a:visited,a:active{
 .mod_banner .image_button .button,
 .mod_banner .image_button .hover,
 .mod_banner .link,
-.mod_banner .link .icon{
+.mod_banner .link .icon,
+.mod_banner .img_main{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
