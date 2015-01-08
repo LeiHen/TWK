@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*CSS reset*/
+
+
+.xlbimg{ text-align:center;}
+.wrap_mian .xlbfont1{ font-size:30px; font-weight:700;color:#03adde; width:640px; margin:0px auto; height:60px; line-height:60px;text-align:center}
+.wrap_mian .xlbfont2{ font-size:14px; color:#000; width:640px; margin:0px auto; line-height:22px; text-align:center}
+.wrap_mian .bg1{ margin:0px auto;clear:both; display:block; width:680px; height:450px; background:url(../images/xielibao/02.png) no-repeat center}
+.wrap_mian .bg1 ul{ padding-top:140px; font-size:14px;}
+.wrap_mian .bg1 ul .left{ float:left; width:260px; text-align:right; height:55px; line-height:55px;}
+.wrap_mian .bg1 ul .right{ float:right; width:330px; text-align:left; height:55px; line-height:55px;}
+.wrap_mian .xlbfont3{ font-size:24px; text-align:center; font-weight:700;}
+.xlbbg2{ background:#ffae00; height:510px; width:100%; clear:both}
+.xlbbg2 .xlbf1{ text-align:center; line-height:2em; font-weight:800; font-size: 1.8em;letter-spacing: 0.2em;}
+.xlbbg2 .xlbf1 span{color:#FFF;}
+.xlbbg2 .bottom{ width:980px; margin:0px auto; margin-top:32px; }
+.xlbbg2 .bottom .left{ float:left; width:348px;}
+.xlbbg2 .bottom .right{ float:left; width:570px; text-align:left;}
+.xlbbg2 .bottom .right ul{ padding-top:10px;}
+.xlbbg2 .bottom .right ul li{ height:100px;}
+.xlbbg2 .bottom .right ul li dt{ font-size:2.4em; color:#FFF; font-weight:800; line-height:2em;}
+.xlbbg2 .bottom .right ul li dl{ font-size:1.8em; color:#000; }
+.wrap_mian .xlbf4{ text-align:center; font-size:1.8em; line-height:2.5em;}
+.wrap_mian .xlbf4 strong{ font-weight:800;}
+.wrap_mian .xlbf4 h2{color:#0096ff; font-size:1.4em;font-weight:800;}
+.wrap_mian .imgt{ width:880px; margin:0px auto;}
+.wrap_mian .imgt li{ float:left;}

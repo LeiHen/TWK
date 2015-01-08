@@ -220,7 +220,7 @@ function loadBox(ID){
 
     setInterval(function(){
     	switchover(imgBtn,imagesBoxL);
-    },8000);
+    },10000);
 
 
     

@@ -251,6 +251,7 @@ a:link,a:visited,a:active{
 	overflow: hidden;
 	background: #1f2227;
 	left: 0;
+	color: #4b4e52;
 	/*margin: -50% 0 0 0;*/
 
 }
@@ -260,8 +261,8 @@ a:link,a:visited,a:active{
 	+display: inline;
 	+zoom: 1;
 	line-height: 50px;
-	color: #fff;
-	color: #4b4e52;
+	/*color: #fff;*/
+	/*color: #4b4e52;*/
 }
 .sidebar .list .icon{
 	width: 50px;
